@@ -1,98 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>freeCodeCamp Survey Form</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<body>
-    <header class="header"><h1 id="title">freeCodeCamp Survey Form</h1>
-        <p id="description">Thank you for taking the time to help us improve the platform</p>
-        </header>
-    <main>
-
-        <form id="survey-form">
-        
-          <div class="personal-cont">
-            <label class="personal-label" id="name-label">Name
-            <input class="personal-input" id="name" type="text" placeholder="Enter your name" required/>
-            </label>
-          <label class="personal-label" id="email-label">Email
-            <input class="personal-input" id="email" type="email" placeholder="Enter your name" required/>
-            </label>
-          <label class="personal-label" id="number-label">Age
-        (optional)
-        <input class="personal-input" id="number" type="number" pattern="[0-9]{8,}" min="16" max="99" placeholder="Age"/>
-        </label>
+  <body>
+    <main id="main">
+      <h1 id="title">Dr. Norman Borlaug</h1>
+      <p>The man who saved a billion lives</p>
+      <div id="img-div">
+        <img
+          id="image"
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg"
+          alt="photo Dr. Norman Borlaug"
+        />
+        <div id="img-caption">
+          Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase
+          wheat yields - part of his life-long war on hunger.
         </div>
-        
-          <div class="personal-cont"><label class="personal-label">Which option best describes your current role?
-          <select class="current-rule-select" id="dropdown">
-          <option value="0">Select current role</option>
-          <option value="1">Student</option>
-          <option value="2">Full Time Job</option>
-          <option value="3">Full Time Learner</option>
-          <option value="4">Prefer not to say</option>
-          <option value="5">Other</option></select>
-          </label>
-          </div>
-        
-          <div class="personal-cont">
-            <legend class="personal-label">Would you recommend freeCodeCamp to a friend?</legend>
-            <label class="personal-label"><input class="recommend-input" class="recommend-input" type="radio" name="recommend" class="inline" value="Definitely"/> Definitely</label>
-          <label class="personal-label"><input class="recommend-input" type="radio" name="recommend" class="inline" value="Maybe"/> Maybe</label>
-          <label class="personal-label"><input class="recommend-input" type="radio" name="recommend" class="inline" value="Not sure"/> Not sure</label>
-          </label>
-          </div>
-        
-          <div class="personal-cont">
-            <label class="personal-label">What is your favorite feature of freeCodeCamp?<select class="current-rule-select" id="feature">
-          <option value="Select current role">Select current role</option>
-          <option value="challenges">challenges</option>
-          <option value="Projects">Projects</option>
-          <option value="Community">Community</option>
-          <option value="Open source">Open source</option>
-          </select>
-          </label>
-          </div>
-        
-          <div class="personal-cont">
-            <legend class="personal-label">
-            What would you like to see improved? (Check all that apply)</legend>
-          <label class="personal-label"><input class="checkbox" type="checkbox" name="Front-end Projects" value="Front-end"/> Front-end Projects</label>
-          <label class="personal-label"><input class="checkbox" type="checkbox" name="Back-end Projects" value="Back-end"/> Back-end Projects</label>
-          <label class="personal-label"><input class="checkbox" type="checkbox" name="Data Visualization" value="Visualization"/> Data Visualization</label>
-          <label class="personal-label"><input class="checkbox" type="checkbox" name="Challenges" value="Challenges"/> Challenges</label>
-          <label class="personal-label"><input class="checkbox" type="checkbox" name="Open Source Community" value="Source Community"/> Open Source Community</label>
-          <label class="personal-label"><input class="checkbox" type="checkbox" name="Gitter help rooms" value="Gitter"/> Gitter help rooms</label>
-          <label class="personal-label"><input class="checkbox" type="checkbox" name="Videos" value="Videos"/> Videos</label>
-          <label class="personal-label"><input class="checkbox" type="checkbox" name="City Meetups" value="Meetups"/> City Meetups</label>
-          <label class="personal-label"><input class="checkbox" type="checkbox" name="Wiki" value="Wiki"/> Wiki</label>
-          <label class="personal-label"><input class="checkbox" type="checkbox" name="Forum" value="Forum"/> Forum</label>
-          <label class="personal-label"><input class="checkbox" type="checkbox" name="Additional Courses" value="Additional Courses"/> Additional Courses
-          </label>
-          </div>
-        
-          <div class="personal-cont">
-            <label class="personal-label">Any comments or suggestions?
-            <textarea class="personal-label-textarea" placeholder="Enter your comment here" rows="3" cols="30"></textarea>
-          </label>
-          </div>
-        
-          <div class="cont-form-btn"><input id="submit" class="form-btn" type="submit" name="submit"/></div>
-        </form>
-        </main>
-    <footer class="footer">
-        <a class="footer-logo link"  href="">
-            <span class="page-logo-web">web</span>studio
-        </a>
-        <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-    </footer>
-</body>
+      </div>
+      <div id="tribute-info">
+        <h3 class="tribute-title">Here's a time line of Dr. Borlaug's life:</h3>
+        <ul class="tribute-list">
+          <li class="tribute-item">
+            <strong class="tribute-date">1914</strong> - Born in Cresco, Iowa
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">1933</strong> - Leaves his family's farm to attend the
+            University of Minnesota, thanks to a Depression era program known as the "National Youth
+            Administration"
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">1935</strong> - Has to stop school and save up more money.
+            Works in the Civilian Conservation Corps, helping starving Americans. "I saw how food
+            changed them", he said. "All of this left scars on me."
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">1937</strong> - Finishes university and takes a job in the
+            US Forestry Service
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">1938</strong> - Marries wife of 69 years Margret Gibson.
+            Gets laid off due to budget cuts. Inspired by Elvin Charles Stakman, he returns to
+            school study under Stakman, who teaches him about breeding pest-resistent plants.
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">1941</strong> - Tries to enroll in the military after the
+            Pearl Harbor attack, but is rejected. Instead, the military asked his lab to work on
+            waterproof glue, DDT to control malaria, disinfectants, and other applied science.
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">1942</strong> - Receives a Ph.D. in Genetics and Plant
+            Pathology
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">1944</strong> - Rejects a 100% salary increase from Dupont,
+            leaves behind his pregnant wife, and flies to Mexico to head a new plant pathology
+            program. Over the next 16 years, his team breeds 6,000 different strains of disease
+            resistent wheat - including different varieties for each major climate on Earth.
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">1945</strong> - Discovers a way to grown wheat twice each
+            season, doubling wheat yields
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">1953</strong> - crosses a short, sturdy dwarf breed of
+            wheat with a high-yeidling American breed, creating a strain that responds well to
+            fertilizer. It goes on to provide 95% of Mexico's wheat.
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">1962</strong> - Visits Delhi and brings his high-yielding
+            strains of wheat to the Indian subcontinent in time to help mitigate mass starvation due
+            to a rapidly expanding population
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">1970</strong> - receives the Nobel Peace Prize
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">1983</strong> - helps seven African countries dramatically
+            increase their maize and sorghum yields
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">1984</strong> - becomes a distinguished professor at Texas
+            A&M University
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">2005</strong> - states "we will have to double the world
+            food supply by 2050." Argues that genetically modified crops are the only way we can
+            meet the demand, as we run out of arable land. Says that GM crops are not inherently
+            dangerous because "we've been genetically modifying plants and animals for a long time.
+            Long before we called it science, people were selecting the best breeds."
+          </li>
+          <li class="tribute-item">
+            <strong class="tribute-date">2009</strong> - dies at the age of 95.
+          </li>
+        </ul>
+        <p class="tribute-paragraf">
+          "Borlaug's life and achievement are testimony to the far-reaching contribution that one
+          man's towering intellect, persistence and scientific vision can make to human peace and
+          progress."
+        </p>
+        <p class="tribute-paragraf">-- Indian Prime Minister Manmohan Singh</p>
+      </div>
+      <h3>
+        If you have time, you should read more about this incredible human being on his
+        <a
+          id="tribute-link"
+          href="https://en.wikipedia.org/wiki/Norman_Borlaug"
+          target="_blank"
+          rel="noopener"
+          >Wikipedia entry.</a
+        >
+      </h3>
+    </main>
+  </body>
 </html>
