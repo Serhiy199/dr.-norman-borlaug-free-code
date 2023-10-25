@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="header"><h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+    <main>
+
+        <form id="survey-form">
+        
+          <div class="personal-cont">
+            <label class="personal-label" id="name-label">Name
+            <input class="personal-input" id="name" type="text" placeholder="Enter your name" required/>
+            </label>
+          <label class="personal-label" id="email-label">Email
+            <input class="personal-input" id="email" type="email" placeholder="Enter your name" required/>
+            </label>
+          <label class="personal-label" id="number-label">Age
+        (optional)
+        <input class="personal-input" id="number" type="number" pattern="[0-9]{8,}" min="16" max="99" placeholder="Age"/>
+        </label>
+        </div>
+        
+          <div class="personal-cont"><label class="personal-label">Which option best describes your current role?
+          <select class="current-rule-select" id="dropdown">
+          <option value="0">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Full Time Learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option></select>
+          </label>
+          </div>
+        
+          <div class="personal-cont">
+            <legend class="personal-label">Would you recommend freeCodeCamp to a friend?</legend>
+            <label class="personal-label"><input class="recommend-input" class="recommend-input" type="radio" name="recommend" class="inline" value="Definitely"/> Definitely</label>
+          <label class="personal-label"><input class="recommend-input" type="radio" name="recommend" class="inline" value="Maybe"/> Maybe</label>
+          <label class="personal-label"><input class="recommend-input" type="radio" name="recommend" class="inline" value="Not sure"/> Not sure</label>
+          </label>
+          </div>
+        
+          <div class="personal-cont">
+            <label class="personal-label">What is your favorite feature of freeCodeCamp?<select class="current-rule-select" id="feature">
+          <option value="Select current role">Select current role</option>
+          <option value="challenges">challenges</option>
+          <option value="Projects">Projects</option>
+          <option value="Community">Community</option>
+          <option value="Open source">Open source</option>
+          </select>
+          </label>
+          </div>
+        
+          <div class="personal-cont">
+            <legend class="personal-label">
+            What would you like to see improved? (Check all that apply)</legend>
+          <label class="personal-label"><input class="checkbox" type="checkbox" name="Front-end Projects" value="Front-end"/> Front-end Projects</label>
+          <label class="personal-label"><input class="checkbox" type="checkbox" name="Back-end Projects" value="Back-end"/> Back-end Projects</label>
+          <label class="personal-label"><input class="checkbox" type="checkbox" name="Data Visualization" value="Visualization"/> Data Visualization</label>
+          <label class="personal-label"><input class="checkbox" type="checkbox" name="Challenges" value="Challenges"/> Challenges</label>
+          <label class="personal-label"><input class="checkbox" type="checkbox" name="Open Source Community" value="Source Community"/> Open Source Community</label>
+          <label class="personal-label"><input class="checkbox" type="checkbox" name="Gitter help rooms" value="Gitter"/> Gitter help rooms</label>
+          <label class="personal-label"><input class="checkbox" type="checkbox" name="Videos" value="Videos"/> Videos</label>
+          <label class="personal-label"><input class="checkbox" type="checkbox" name="City Meetups" value="Meetups"/> City Meetups</label>
+          <label class="personal-label"><input class="checkbox" type="checkbox" name="Wiki" value="Wiki"/> Wiki</label>
+          <label class="personal-label"><input class="checkbox" type="checkbox" name="Forum" value="Forum"/> Forum</label>
+          <label class="personal-label"><input class="checkbox" type="checkbox" name="Additional Courses" value="Additional Courses"/> Additional Courses
+          </label>
+          </div>
+        
+          <div class="personal-cont">
+            <label class="personal-label">Any comments or suggestions?
+            <textarea class="personal-label-textarea" placeholder="Enter your comment here" rows="3" cols="30"></textarea>
+          </label>
+          </div>
+        
+          <div class="cont-form-btn"><input id="submit" class="form-btn" type="submit" name="submit"/></div>
+        </form>
+        </main>
+    <footer class="footer">
+        <a class="footer-logo link"  href="">
+            <span class="page-logo-web">web</span>studio
+        </a>
+        <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+    </footer>
+</body>
+</html>
